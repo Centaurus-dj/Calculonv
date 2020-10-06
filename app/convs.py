@@ -25,7 +25,7 @@ try: import modules.conversions; log.imported("conversions"); c = modules.conver
 except Exception as e: log.unimported("conversions", e); exit();
 try: import modules.calculate; log.imported("calculate");
 except Exception as e: log.unimported("calculate", e); exit()
-try: import module.intclass; log.imported("intclass");
+try: import modules.intclass; log.imported("intclass");
 except Exception as e: log.unimported("intclass", e); exit()
 try: import lists; log.imported("lists");l = lists;
 except Exception as e: log.unimported("lists", e); exit();
@@ -70,7 +70,7 @@ def Input():
             elif n2 in l.hex:
                 log.info("User sent to {ConvertBinToHex}")
                 c.ConvertBinToHex(n1)
-                Input()
+            Input()
         elif entry == "z" or entry == "Z":
             n1 = AskOne()
             try:
@@ -95,22 +95,15 @@ def Input():
                         cn = c.ConvertDecToBin(n1, True)
                         c.ConvertDecToBin(n1)
                     else:
-                        cn = c.ConvertHexToBin(n1, True, int(subentry))
-                        c.ConvertDecToBin(n1, False, int(subentry))
+                        cn = c.ConvertDecToBin(n1, True, int(subentry))
                     try:
-                        HelpComplement()
-                        subentry = input("What complement do you want? ")
-                        if subentry == "a":
-                            one = BinComplement1(cn, True)
-                            t.barsep("\nWe have as complement {}".format(one))
-                            print(one)
-                        elif subentry == "z":
-                            two = BinComplement12(cn, True)
-                            t.barsep("We have as 1st complement {} and as 2nd {}".format(two[0], two[1]))
-                        Input()
+                        one = BinComplement1(cn, True)
+                        two = BinComplement12(cn, True)
+                        t.barsep("The result is {}".format(two[1]))
                     except Exception as e:
                         log.error(e)
                         print(e)
+                    Input()
                 elif cs == "pos":
                     subentry = input("What's the encoding you want? ")
                     if subentry == "":
@@ -131,7 +124,7 @@ def Input():
                 Input()
             elif n2 in l.bin:
                 log.info("User sent to {ConvertHexToBin}")
-                cs = c.ConvertHexToBin(n1, True, 8, True)
+                cs = c.ConvertHexToBin(n1, True)
                 if cs == "neg":
                     subentry = input("What's the encoding you want? ")
                     if subentry == "":
@@ -159,9 +152,9 @@ def Input():
                     if subentry == "":
                         c.ConvertHexToBin(n1)
                     else:
-                        c.ConvertHexToBin(n1, False, int(subentry))
+                        c.ConvertHexToBin(n1, False)
                 else:
-                    print("something went wrong....")
+                    pass
                 log.outfunc()
                 Input()
     except KeyboardInterrupt:

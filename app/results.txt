@@ -1,0 +1,93 @@
+
+Operation done the 2020-09-24 22:00:52.499327 :
+The Binary value for 26 is 00011010
+
+Operation done the 2020-09-29 10:37:37.851536 :
+The Binary value for 127 is 01111111
+
+Operation done the 2020-09-29 10:38:54.310981 :
+The Binary value for -127 is 01111111
+
+Operation done the 2020-09-29 10:38:54.329813 :
+The Binary value for -127 is 01111111
+
+Operation done the 2020-10-05 12:02:13.442821 :
+The Binary value for -23 is 00010111
+
+Operation done the 2020-10-05 12:02:13.464754 :
+The Binary value for -23 is 00010111
+
+Operation done the 2020-10-05 12:25:05.030422 :
+The Binary value for -4 is 00000100
+
+Operation done the 2020-10-05 18:46:59.702416 :
+The Binary value for 24 is 00011000
+
+Operation done the 2020-10-05 18:47:19.820323 :
+The Binary value for 124 is 01111100
+
+Operation done the 2020-10-05 18:47:33.829511 :
+The Binary value for -124 is 01111100
+
+Operation done the 2020-10-05 19:20:52.365250 :
+The Binary value for 124 is 01111100
+
+Operation done the 2020-10-06 07:41:48.843378 :
+The Binary value for -124 is 01111100
+
+Operation done the 2020-10-06 07:43:45.703367 :
+The Binary value for -124 is 001111100
+
+Operation done the 2020-10-06 07:44:00.968603 :
+The Binary value for 124 is 001111100
+
+Operation done the 2020-10-06 07:46:27.034023 :
+The Binary value for 124 is 01111100
+
+Operation done the 2020-10-06 07:47:48.356458 :
+The Binary value for 124 is 01111100
+
+Operation done the 2020-10-06 07:48:08.002373 :
+The Binary value for -124 is 01111100
+
+Operation done the 2020-10-06 07:48:28.353347 :
+The decimal value for 11000010 is 194
+
+Operation done the 2020-10-06 07:49:20.847435 :
+The decimal value for 00111101 is 61
+
+Operation done the 2020-10-06 07:50:14.711774 :
+The Binary value for 124 is 01111100
+
+Operation done the 2020-10-06 07:50:30.649780 :
+The decimal value for 01111100 is 124
+
+Operation done the 2020-10-06 07:50:49.916083 :
+The decimal value for 10000011 is 131
+
+Operation done the 2020-10-06 07:51:19.675921 :
+The decimal value for 10000100 is 132
+
+Operation done the 2020-10-06 07:51:43.012265 :
+The Decimal value for 9BB is 2491
+
+Operation done the 2020-10-06 07:53:51.666322 :
+The Decimal value for 9BB is 2491
+
+Operation done the 2020-10-06 07:53:51.670292 :
+The Binary value for 2491 is 100110111011
+
+Operation done the 2020-10-06 07:53:51.691150 :
+The Binary value for 9BB is 100110111011
+
+Operation done the 2020-10-06 07:55:17.511039 :
+The Decimal value for 9BB is 2491
+
+Operation done the 2020-10-06 07:55:17.514021 :
+The Binary value for 2491 is 100110111011
+
+Operation done the 2020-10-06 07:55:17.630759 :
+The Binary value for 9BB is 100110111011
+
+Operation done the 2020-10-06 08:00:19.271214 :
+The Binary value for 24 is 00011000

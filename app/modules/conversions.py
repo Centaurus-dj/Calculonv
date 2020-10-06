@@ -105,27 +105,17 @@ class Conversions:
                 binary.append(s1)
                 x //= 2
             r = "".join(binary[::-1])
-            if encoding == 8 or encoding == "8":
-                while len(r) < 8:
-                    r = "0" + r
-            elif encoding == "" or encoding == None:
+            if encoding == "" or encoding == None:
                 pass
+            elif encoding:
+                while len(r) < encoding:
+                    r = "0" + r
             else:
                 while len(r) < encoding:
                     r = "0" + r
             if not step:
-                t.barsep(f"The Binary value for "+ str(xs)+ " is "+ r)
+                t.barsep("The Binary value for "+ str(xs)+ " is "+ r)
                 log.debug(f"The Binary value for "+ str(xs)+ " is "+ r)
-                subentry = input("Do you want the number in signed binary? ")
-                if subentry in l.yeslist or subentry in l.ouilist:
-                    if mt.dn >= -127 and mt.dn <= 127:
-                        sb = mt.SignBin(r, True)
-                        t.barsep("The signed binary is : {}".format(sb))
-                    else:
-                        t.barsep("{} can't be transformed in signed binary".format(n1))
-                        log.error("{} can't be transformed in signed binary".format(n1))
-                        log.outfunc()
-                        log.end()
                 log.outfunc()
             else:
                 log.debug(f"The Binary value for "+ str(xs)+ " is "+ r)
@@ -192,7 +182,7 @@ class Conversions:
         log.infunc("ConvertHexToBin")
         xs = x
         log.info("first step started")
-        x = ConvertHexToDec(x, True)
+        x = self.ConvertHexToDec(x, True)
         log.info("first step done")
         log.info("second step started")
         if encoding != None:
